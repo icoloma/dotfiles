@@ -1,3 +1,12 @@
 #!/bin/sh
 
-sudo apt-get -y install rbenv ruby-build git git-gui tmux zsh
+# Ruby
+PKG="rbenv ruby-build"
+
+# Git
+PKG="$PKG git git-gui meld"
+
+# Shell
+PKG="$PKG tmux zsh"
+
+sudo apt-get -y install $PKG
