@@ -11,7 +11,7 @@ PKG="$PKG git git-gui meld"
 PKG="$PKG tmux zsh"
 
 # Multiple Clipboards
-PKG="$PKG clipit"
+PKG="$PKG diodon"
 
 # Image processing: gimp, inkscape and converter tools
 PKG="$PKG gimp gimp-help inkscape"
