@@ -38,3 +38,9 @@ do
 done
 
 unset config_files
+
+# make ctrl+[left|right] work, see http://clock.co.uk/blog/zsh-ctrl-left-arrow-outputting-5d
+bindkey ';5D' emacs-backward-word
+bindkey ';5C' emacs-forward-word
+
+export WORDCHARS=''
