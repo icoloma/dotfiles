@@ -1,0 +1,16 @@
+[Default Applications]
+text/html=google-chrome.desktop
+x-scheme-handler/http=google-chrome.desktop
+x-scheme-handler/https=google-chrome.desktop
+x-scheme-handler/about=google-chrome.desktop
+x-scheme-handler/unknown=google-chrome.desktop
+image/x-eps=inkscape.desktop
+image/svg+xml=inkscape.desktop
+image/jpeg=gimp.desktop
+application/xml=atom.desktop
+
+[Added Associations]
+image/x-eps=inkscape.desktop;
+image/svg+xml=inkscape.desktop;
+image/jpeg=gimp.desktop;
+application/xml=atom.desktop;
