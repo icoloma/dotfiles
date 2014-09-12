@@ -4,7 +4,6 @@
 if test ! $(which gcloud)
 then
   echo "  Installing Google Cloud SDK."
-  CLOUDSDK_CORE_DISABLE_PROMPTS=true
+#  CLOUDSDK_CORE_DISABLE_PROMPTS=true
   curl https://sdk.cloud.google.com | bash
-  sudo mv ~/google-cloud-sdk /opt
 fi

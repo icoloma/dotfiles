@@ -2,9 +2,8 @@
 # Install (non-free) fonts from Dropbox/fonts
 set -e
 
-if [ ! -f ~/.fonts ]
+if [ ! -d ~/.fonts ]
 then
   echo "   Installing fonts."
-#  mkdir -p ~/.fonts
-  cp -R ~/Dropbox/fonts ~/.fonts
+  ln -s ~/Dropbox/fonts ~/.fonts
 fi
