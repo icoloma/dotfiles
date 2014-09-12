@@ -14,10 +14,20 @@ PKG="$PKG tmux zsh"
 PKG="$PKG diodon diodon-plugins"
 
 # Image processing: gimp, inkscape and converter tools
-PKG="$PKG gimp gimp-help inkscape"
+PKG="$PKG gimp gimp-help-en inkscape"
 
 # Media player
 PKG="$PKG vlc"
 
-echo "Installing $PKG"
-sudo apt-get -y install $PKG
+if test ! $(which inkscape)
+then
+	echo "Installing $PKG"
+	sudo apt-get -y install $PKG
+fi
+
+if test `find /var/cache/apt/pkgcache.bin -mmin +1200`
+then 
+	echo "Upgrading packages"
+	sudo apt-get update
+	sudo apt-get upgrade
+fi
