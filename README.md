@@ -8,12 +8,18 @@ There should be a lot for Java, zsh, atom/sublime and cloud computing here.
 
 ## install
 
-Run this:
+When installing from scratch:
 
 ```sh
-git clone https://github.com/icoloma/dotfiles.git ~/.dotfiles
+sudo apt-get install git
+ssh-keygen
+
+# Install ssh public key on Github, then
+git clone ssh://github.com/icoloma/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
+
+Reboot, then repeat executing `script/install`
 
 For a more detailed description, go to Holfman repo.
