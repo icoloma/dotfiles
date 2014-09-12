@@ -5,7 +5,7 @@
 PKG="rbenv ruby-build"
 
 # Git
-PKG="$PKG git git-gui meld"
+PKG="$PKG git git-gui meld vim"
 
 # Shell: tmux, zsh
 PKG="$PKG tmux zsh"
