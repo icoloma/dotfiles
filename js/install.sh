@@ -16,5 +16,5 @@ fi
 if test ! $(which gulp)
 then
   echo "  Installing gulp."
-  sudo npm -g install gulp
+  npm -g install gulp
 fi
