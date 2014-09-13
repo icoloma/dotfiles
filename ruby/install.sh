@@ -6,3 +6,9 @@ then
   echo "  Installing tmuxinator."
   sudo gem install tmuxinator > /tmp/tmuxinator-install.log
 fi
+
+if test ! $(which jekyll)
+then
+  echo "  Installing jekyll."
+  sudo gem install jekyll > /tmp/jekyll-install.log
+fi
