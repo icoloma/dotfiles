@@ -19,8 +19,17 @@ then
   sudo apt-get -y install nodejs
 fi
 
+# avoid installing everything under /usr/local/npm
+npm config set prefix ~/npm
+
 if test ! $(which gulp)
 then
   echo "  Installing gulp."
   npm -g install gulp
+fi
+
+if test ! $(which grunt)
+then
+  echo "  Installing grunt."
+  npm -g install grunt-cli
 fi
