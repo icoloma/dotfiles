@@ -1,8 +1,9 @@
 #!/bin/sh
 # Install all apt-get packages in a single call
+# TODO: Break this file in topics
 
 # Git
-PKG="$PKG git git-gui meld vim"
+PKG="git git-gui meld vim"
 
 # Shell: tmux, zsh
 PKG="$PKG tmux zsh"
@@ -23,7 +24,11 @@ PKG="$PKG unrar rar"
 PKG="$PKG oracle-java8-installer"
 
 # Ruby
-PKG="rbenv ruby-build ruby-dev"
+PKG="$PKG rbenv ruby-build ruby-dev"
+
+# JavaScript (node, gulp)
+PKG="$PKG libcairo2-dev libjpeg-dev libgif-dev"
+
 
 # Test one application at random. If it's not there, install everything
 if test ! $(which inkscape)
