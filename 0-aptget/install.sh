@@ -1,15 +1,8 @@
 #!/bin/sh
-# Install all apt-get packages in a single call
-# TODO: Break this file in topics
-
-# Git
-PKG="git git-gui meld vim"
-
-# Shell: tmux, zsh
-PKG="$PKG tmux zsh"
+# Install a lot of small tools
 
 # Multiple Clipboards
-PKG="$PKG diodon diodon-plugins"
+PKG="diodon diodon-plugins"
 
 # Image processing: gimp, inkscape and converter tools
 PKG="$PKG gimp gimp-help-en gimp-data gimp-plugin-registry gimp-data-extras inkscape"
@@ -19,16 +12,6 @@ PKG="$PKG vlc"
 
 # Compression
 PKG="$PKG unrar rar"
-
-# Java
-PKG="$PKG oracle-java8-installer"
-
-# Ruby
-PKG="$PKG rbenv ruby-build ruby-dev"
-
-# JavaScript (node, gulp)
-PKG="$PKG libcairo2-dev libjpeg-dev libgif-dev"
-
 
 # Test one application at random. If it's not there, install everything
 if test ! $(which inkscape)
@@ -47,5 +30,3 @@ then
 	sudo apt-get upgrade
 	sudo apt-get autoremove
 fi
-
-

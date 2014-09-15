@@ -13,6 +13,9 @@
 #  nvm install $VERSION
 #fi
 
+# test is missing here
+sudo apt-get install libcairo2-dev libjpeg-dev libgif-dev
+
 if test ! $(which node)
 then
   curl -sL https://deb.nodesource.com/setup | sudo bash -

@@ -1,10 +1,11 @@
 #!/bin/sh
 # Install ruby gems
 
-if test ! $(which tmuxinator)
+# Ruby
+if test ! $(which ruby)
 then
-  echo "  Installing tmuxinator."
-  sudo gem install tmuxinator > /tmp/tmuxinator-install.log
+  echo "  Installing ruby."
+  sudo gem install rbenv ruby-build ruby-dev > /tmp/ruby-install.log
 fi
 
 if test ! $(which jekyll)
