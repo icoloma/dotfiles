@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/sh
 # Copied from the GCP installed files
 
 # The next line updates PATH for the Google Cloud SDK.
