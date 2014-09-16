@@ -25,7 +25,25 @@ then
   FILENAME=$(echo $URL | grep -o 'idea[^/]\+')
   echo "Installing IntelliJ IDEA into /opt/$(echo $FILENAME | sed s/\.tar\.gz//)"
   wget -O /tmp/$FILENAME $URL
-  tar -xvzf /tmp/$FILENAME -C /tmp
+  tar -xvzf /tmp/$FILENAME -C /tmp > /tmp/idea-install.log
   sudo mv /tmp/idea*/ /opt
+
+  echo 'Creating launcher'
+  mkdir -p ~/.local/share/applications/
+  EXEC=$(ls /opt/idea-IC*/bin/idea.sh | sort --version-sort | head -1)
+  echo "
+  [Desktop Entry]
+  Version=1.0
+  Type=Application
+  Name=IntelliJ IDEA Community Edition
+  Icon=$(echo $EXEC | sed s/.sh/.png/)
+  Exec=$EXEC %f
+  Comment=Develop with pleasure!
+  Categories=Development;IDE;
+  Terminal=false
+  StartupWMClass=jetbrains-idea-ce
+  " > ~/.local/share/applications/jetbrains-idea-ce.desktop
+  #$(EXEC) >> /tmp/idea-install.log
+
 fi
 

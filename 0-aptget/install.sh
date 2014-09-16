@@ -30,3 +30,6 @@ then
 	sudo apt-get upgrade
 	sudo apt-get autoremove
 fi
+
+# Lock to launcher? test this
+gsettings set com.canonical.Unity.Launcher favorites "['application://gnome-terminal.desktop', 'application://google-chrome.desktop', 'application://sublime-text-2.desktop', 'application://jetbrains-idea-ce.desktop', 'application://nautilus.desktop', 'application://gnome-screenshot.desktop', 'application://gimp.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"
