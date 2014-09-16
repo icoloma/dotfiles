@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Google Cloud Platform requires Java 7. Feel free to upgrade to Java 8 if you are not using it
-# Select a concrete Java version (remember to change JAVA_HOME)
+# Select a concrete Java version:
 # update-java-alternatives -s java-7-oracle
 if test ! $(which java)
 then
