@@ -7,15 +7,16 @@ if test ! $(which java)
 then
   echo "  Installing Java."
   sudo add-apt-repository ppa:webupd8team/java
-  sudo apt-get update
-  sudo apt-get -y install oracle-java7-installer > /tmp/java-install.log
+  sudo apt-get update > /tmp/java-install.log
+  sudo apt-get -y install oracle-java7-installer
 fi
+
 
 if test ! $(which gradle)
 then
   sudo add-apt-repository ppa:cwchien/gradle
-  sudo apt-get update
-  sudo apt-get install gradle
+  sudo apt-get update >> /tmp/java-install.log
+  sudo apt-get -y install gradle
 fi
 
 if [ ! -d /opt/idea ]
