@@ -36,3 +36,9 @@ then
   echo "  Installing grunt."
   npm -g install grunt-cli
 fi
+
+if test ! $(which jshint)
+then
+  echo "  Installing JSHint."
+  npm -g install jshint
+fi

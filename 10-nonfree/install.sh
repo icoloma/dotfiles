@@ -35,7 +35,7 @@ then
   {"command": "duplicate_line"}
   ]' > "~/.config/sublime-text-2/Packages/User/duplicate_lines.sublime-macro"
   ln -s $(pwd)/10-nonfree/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap
-  # Now install manually the SCSS and Emmet plugins
+  # Now install manually the following plugins: SCSS, Emmet, JSHint
 fi
 
 # Skype does not support unbuntu 14 yet
