@@ -27,14 +27,15 @@ then
 	sudo apt-get update
 	sudo apt-get install sublime-text
 
-  mkdir -p "~/.config/sublime-text-2/Installed Packages"
-  mkdir -p "~/.config/sublime-text-2/Packages/User"
-  wget -O "~/.config/sublime-text-2/Installed Packages/Package Control.sublime-package" https://sublime.wbond.net/Package%20Control.sublime-package
+  mkdir -p "$HOME/.config/sublime-text-2/Installed Packages"
+  mkdir -p "$HOME/.config/sublime-text-2/Packages/User"
+  wget -O "$HOME/.config/sublime-text-2/Installed Packages/Package Control.sublime-package" https://sublime.wbond.net/Package%20Control.sublime-package
   echo '[
   {"command": "expand_selection", "args": {"to": "line"}},
   {"command": "duplicate_line"}
   ]' > "~/.config/sublime-text-2/Packages/User/duplicate_lines.sublime-macro"
   ln -s $(pwd)/10-nonfree/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap
+  # Now install manually the SCSS and Emmet plugins
 fi
 
 # Skype does not support unbuntu 14 yet
