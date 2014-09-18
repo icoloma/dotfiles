@@ -37,6 +37,12 @@ then
   npm -g install grunt-cli
 fi
 
+if test ! $(which jshint)
+then
+  echo "  Installing JSHint."
+  npm -g install jshint
+fi
+
 if test ! $(which casperjs)
 then
   echo "  Installing CasperJS."
