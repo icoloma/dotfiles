@@ -14,7 +14,7 @@
 #fi
 
 # test is missing here
-sudo apt-get install libcairo2-dev libjpeg-dev libgif-dev
+sudo apt-get -y install libcairo2-dev libjpeg-dev libgif-dev
 
 if test ! $(which node)
 then
@@ -35,4 +35,10 @@ if test ! $(which grunt)
 then
   echo "  Installing grunt."
   npm -g install grunt-cli
+fi
+
+if test ! $(which casperjs)
+then
+  echo "  Installing CasperJS."
+  npm -g install casperjs
 fi
