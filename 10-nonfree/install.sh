@@ -33,7 +33,7 @@ then
   echo '[
   {"command": "expand_selection", "args": {"to": "line"}},
   {"command": "duplicate_line"}
-  ]' > "~/.config/sublime-text-2/Packages/User/duplicate_lines.sublime-macro"
+  ]' > "$HOME/.config/sublime-text-2/Packages/User/duplicate_lines.sublime-macro"
   ln -s $(pwd)/10-nonfree/Default\ \(Linux\).sublime-keymap ~/.config/sublime-text-2/Packages/User/Default\ \(Linux\).sublime-keymap
   # Now install manually the following plugins: SCSS, Emmet, JSHint
 fi

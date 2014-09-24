@@ -3,7 +3,7 @@
  { "keys": ["alt+up"], "command": "swap_line_up" },
  { "keys": ["alt+down"], "command": "swap_line_down" },
  { "keys": ["ctrl+alt+j"], "command": "join_lines" },
- { "keys": ["ctrl+alt+down"], "command": "run_macro_file", "args": {"file": "Packages/User/Duplicate lines.sublime-macro"} },
+ { "keys": ["ctrl+alt+down"], "command": "run_macro_file", "args": {"file": "Packages/User/duplicate_lines.sublime-macro"} },
  { "keys": ["shift+ctrl+r"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} },
  { "keys": ["ctrl+shift+s"], "command": "save_all" },
  { "keys": ["ctrl+l"], "command": "show_overlay", "args": {"overlay": "goto", "text": ":"} },
