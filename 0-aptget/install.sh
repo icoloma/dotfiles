@@ -4,9 +4,6 @@
 # Multiple Clipboards
 PKG="diodon diodon-plugins"
 
-# Image processing: gimp, inkscape and converter tools
-PKG="$PKG gimp gimp-help-en gimp-data gimp-plugin-registry gimp-data-extras inkscape"
-
 # Media player
 PKG="$PKG vlc"
 
@@ -14,7 +11,7 @@ PKG="$PKG vlc"
 PKG="$PKG unrar rar"
 
 # Test one application at random. If it's not there, install everything
-if test ! $(which inkscape)
+if test ! $(which diodon)
 then
 	echo "Installing $PKG"
 	sudo apt-get -y install $PKG

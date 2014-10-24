@@ -1,10 +1,6 @@
 #!/bin/sh
-
-if test ! $(which avconv)
-then
-  echo "  Installing video editing tools."
-  sudo apt-get -y install libav-tools
-fi
+# Video editing tools and such
+# Also, see images/install.sh
 
 if test ! $(which gifsicle)
 then
@@ -18,5 +14,17 @@ fi
 
 if test ! $(which pitivi)
 then
-  sudo apt-get -y install pitivi
+#  sudo apt-get -y install pitivi
+fi
+
+if test ! $(which gifify)
+then
+	echo "Installing gifify"
+	sudo ln -s "$HOME/.dotfiles/video/gifify" /usr/local/bin/
+fi
+
+if test ! $(which webm)
+then
+	echo "Installing webm"
+	sudo ln -s "$HOME/.dotfiles/video/webm" /usr/local/bin/
 fi

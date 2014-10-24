@@ -1,4 +1,5 @@
-gifify() {
+# TODO: decide which versio of gifify we need (function or script). There can be only one :)
+gifify2() {
   if [[ -n "$1" ]]; then
     if [[ $2 == '--good' ]]; then
       avconv -i $1 -r 10 -vcodec png out-static-%05d.png
