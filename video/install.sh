@@ -12,9 +12,9 @@ then
   sudo apt-get -y install openshot
 fi
 
-if test ! $(which pitivi)
+if test ! $(which kazam)
 then
-#  sudo apt-get -y install pitivi
+  sudo apt-get -y install kazam
 fi
 
 if test ! $(which gifify)
