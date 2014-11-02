@@ -20,7 +20,6 @@ function printHelpAndExit {
   exit $1
 }
 
-noupload=0
 fps=10
 speed=1
 
@@ -31,7 +30,6 @@ while getopts "c:o:p:r:s:nx" opt; do
     c) crop=$OPTARG;;
     h) printHelpAndExit 0;;
     o) output=$OPTARG;;
-    n) noupload=1;;
     p) scale=$OPTARG;;
     r) fps=$OPTARG;;
     s) speed=$OPTARG;;
@@ -84,13 +82,5 @@ avconv -loglevel panic -i $filename $filter -r $fps -f image2pipe -vcodec ppm - 
 echo 'Making gif...'
 cat $temp | convert +dither -layers Optimize -delay $delay - ${output}.gif
 
-if [ $noupload -ne 1 ]; then
-  open -a Cloud ${output}.gif
-
-  if [ $cleanup ]; then
-    rm $filename
-    rm ${output}.gif
-  fi
-else
-  echo ${output}.gif
-fi
+echo 'Opening gif...'
+eog ${output}.gif&
