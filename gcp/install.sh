@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 # Install the Google Cloud Platform SDK
 
 if test ! $(which gcloud)
