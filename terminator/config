@@ -1,19 +1,12 @@
 [global_config]
   window_state = maximise
+  suppress_multiple_term_dialog = True
 [keybindings]
 [profiles]
   [[default]]
     background_image = None
 [layouts]
   [[default]]
-    [[[child1]]]
-      type = Terminal
-      parent = window0
-      profile = default
-    [[[window0]]]
-      type = Window
-      parent = ""
-  [[MyLayout]]
     [[[child0]]]
       position = 65:24
       type = Window
