@@ -1,6 +1,7 @@
 #!/bin/sh
 # Video editing tools and such
 # Also, see images/install.sh
+FOLDER=$(cd "$(dirname $0)"; pwd)
 
 if test ! $(which gifsicle)
 then
@@ -20,11 +21,11 @@ fi
 if test ! $(which gifify)
 then
 	echo "Installing gifify"
-	sudo ln -s "$HOME/.dotfiles/video/gifify" /usr/local/bin/
+	sudo ln -s "$FOLDER/gifify" /usr/local/bin/
 fi
 
 if test ! $(which webm)
 then
 	echo "Installing webm"
-	sudo ln -s "$HOME/.dotfiles/video/webm" /usr/local/bin/
+	sudo ln -s "$FOLDER/webm" /usr/local/bin/
 fi
