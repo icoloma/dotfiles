@@ -8,6 +8,8 @@
 		"Package Control",
 		"SCSS",
 		"Solarized Color Scheme",
-		"SublimeLinter"
+		"SublimeLinter",
+		"SublimeLinter-jshint",
+		"SublimeLinter-jsxhint"
 	]
 }
