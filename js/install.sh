@@ -48,3 +48,9 @@ then
   echo "  Installing CasperJS."
   npm -g install casperjs
 fi
+
+if test ! $(which jspm)
+then
+  echo "  Installing jspm."
+  npm -g install jspm
+fi
