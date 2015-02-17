@@ -40,11 +40,17 @@ fi
 if test ! $(which jshint)
 then
   echo "  Installing JSHint."
-  npm -g install jshint
+  npm -g install jshint jsxhint
 fi
 
 if test ! $(which casperjs)
 then
   echo "  Installing CasperJS."
   npm -g install casperjs
+fi
+
+if test ! $(which jspm)
+then
+  echo "  Installing jspm."
+  npm -g install jspm
 fi
