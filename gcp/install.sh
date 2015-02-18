@@ -10,5 +10,5 @@ then
 
   # Install GAE python too
   source gcp/completion.zsh
-  gcloud components update gae-python
+  gcloud components update gae-python gae-java app-engine-java
 fi
