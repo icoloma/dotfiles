@@ -6,3 +6,4 @@ atom.symlink/themes
 
 git/gitconfig.symlink
 npm-debug.log
+*.sublime-workspace
