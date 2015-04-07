@@ -1,1 +1,1 @@
-alias sv="source venv/bin/activate"
+alias sv="source */bin/activate"
