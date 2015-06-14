@@ -5,8 +5,8 @@
 	"installed_packages":
 	[
 		"Color Highlighter",
+		"EditorConfig",
 		"Emmet",
-		"Jade",
 		"JavaScriptNext - ES6 Syntax",
 		"LESS",
 		"MarkdownEditing",
