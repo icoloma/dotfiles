@@ -1,4 +1,6 @@
 #!/bin/sh
+# Install dependencies for Android and the Android SDK
+
 set -e
 
 if test ! $(which adb)

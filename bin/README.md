@@ -1,0 +1,1 @@
+This folder will be added to the system PATH. Symbolic links stored here should work if the destination folder is not altered.

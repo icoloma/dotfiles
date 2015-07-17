@@ -1,0 +1,22 @@
+
+# working files
+.vim/viminfo
+.vim/swaps/*
+.vim/undo
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Compiled files
+*.pyc
+*.class
+
+# library repos
+.gradle
+.mvn
+.maven

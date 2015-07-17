@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install software that is not available in apt repositories
+# Install the Dropbox daemon at ~/.dropbox-dist/dropboxd
 
 set -e
 
