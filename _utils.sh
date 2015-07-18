@@ -1,8 +1,6 @@
 #!/bin/bash
 # Utility methods for scripts inside this package
 
-set -e
-
 answer_is_yes() {
     [[ "$REPLY" =~ ^[Yy]$ ]] \
         && return 0 \
