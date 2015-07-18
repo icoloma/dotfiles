@@ -1,4 +1,4 @@
-z.sh
 *.sublime-workspace
 *.swp
 *.orig
+bin/*

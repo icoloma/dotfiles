@@ -9,6 +9,3 @@ read -n 1
 
 # Backup your .extra config
 [ -e ~/.extra ] && cp ~/.extra ~/.extra.bak
-
-# z is hooked up in .bash_profile
-chmod +x $(pwd)/submodules/z/z.sh

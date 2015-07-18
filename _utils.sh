@@ -42,7 +42,7 @@ cmd_exists() {
 }
 
 execute() {
-    $1 &> /dev/null
+    $1 > /dev/null
     print_result $? "${2:-$1}"
 }
 
@@ -101,12 +101,8 @@ print_question() {
 }
 
 print_result() {
-    [ $1 -eq 0 ] \
-        && print_success "$2" \
-        || print_error "$2"
-
-    [ "$3" == "true" ] && [ $1 -ne 0 ] \
-        && exit
+    [ $1 -eq 0 ] && print_success "$2" || print_error "$2"
+    [ "$3" == "true" ] && [ $1 -ne 0 ] && exit
 }
 
 print_success() {

@@ -3,12 +3,9 @@
 
 source ./_utils.sh
 
-# finds all .dotfiles in this folder
-declare -a FILES_TO_SYMLINK=$(find dotfiles -maxdepth 1 -type f -name ".*" -not -name .DS_Store -not -name .git -not -name .osx)
-FILES_TO_SYMLINK="$FILES_TO_SYMLINK bin" # add in extra contents
-echo $FILES_TO_SYMLINK
-
-# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# finds all .dotfiles 
+declare -a FILES_TO_SYMLINK=$(find dotfiles -maxdepth 1 -type f -name ".*")
+FILES_TO_SYMLINK+=("bin") # add extra contents
 
 main() {
 

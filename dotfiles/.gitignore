@@ -3,6 +3,7 @@
 .vim/viminfo
 .vim/swaps/*
 .vim/undo
+*.sublime-workspace
 
 # Folder view configuration files
 .DS_Store
@@ -15,8 +16,3 @@ Thumbs.db
 # Compiled files
 *.pyc
 *.class
-
-# library repos
-.gradle
-.mvn
-.maven
