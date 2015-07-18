@@ -10,7 +10,13 @@ This is the dotfiles repository used inside Extrema Sistemas. It's a mixture fro
 * Read and memorize the git and bash shortcuts
 * Go into the `apps` folder and start installing your selection of tools
 
-Once the installation is complete you will have to manually add a `~/.gitconfig.local` file with your user account information.
+Once the installation is complete you will have to manually add a `~/.gitconfig.local` file with your user account information:
+
+```
+[user]
+        name = Nacho Coloma
+        email = icoloma@gmail.com
+```
 
 ## Start reading
 
