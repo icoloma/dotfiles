@@ -4,22 +4,19 @@ This is the dotfiles repository used inside Extrema Sistemas. It's a mixture fro
 
 ### installing
 
-* Fork this repository (or clone straight into your local machine). For cloning I would recommend to clone into ~/.dotfiles
+* Fork this repository (or clone straight into your local machine). I would recommend to put it into ~/.dotfiles
 * Read and run parts of `setup.sh`
-* Run `symlink-setup.sh`. This will symlink all links from dotfiles into the home folder
-* Read and remember the git and bash shortcuts
+* Run `symlink-setup.sh`. This will symlink everything from `dotfiles` into the home folder
+* Read and memorize the git and bash shortcuts
 * Go into the `apps` folder and start installing your selection of tools
 
-Once your installation is complete you will have to manually add the following:
-
-* Add ~/.gitconfig.local with your user data
+Once the installation is complete you will have to manually add a `~/.gitconfig.local` file with your user account information.
 
 ## Start reading
 
 You should start with .functions, .aliases and .gitconfig. Good stuff.
 
-~/.extra will contain anything that you don't want to commit back to the git repo, like 
-configuration-specific stuff.
+~/.extra will contain anything that you don't want to commit back to the git repo.
 
 If you decide to install fasd (you should!) it pays off to read [the one-page documentation](https://github.com/clvv/fasd).
 
@@ -27,6 +24,8 @@ If you decide to install fasd (you should!) it pays off to read [the one-page do
 
 A lot of bash and git configuration, some handy aliases for everyday tasks (like launching a web server on the command line, or getting the public IP of this machine on the Internet). But also:
 
-* Dev environment for JavaScript (npm), Ruby (gems), Python (pip) and Java (gradle)
+* Dev environment for JavaScript (npm), Python (pip) and Java (gradle)
 * The Google Cloud Platform SDK
-* Some .deb packages that we consider important for day-to-day development, like gimp, inkscape or terminator.
+* Some installation scripts for tools that we consider important for day-to-day development, like gimp, inkscape or terminator.
+
+We hope you also find it useful.
