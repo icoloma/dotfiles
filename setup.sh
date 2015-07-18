@@ -7,5 +7,8 @@ set -e
 echo "Do not run this script in one go. Hit Ctrl-C NOW"
 read -n 1
 
+# Backup your .extra config
+[ -e ~/.extra ] && cp ~/.extra ~/.extra.bak
+
 # z is hooked up in .bash_profile
 chmod +x $(pwd)/submodules/z/z.sh

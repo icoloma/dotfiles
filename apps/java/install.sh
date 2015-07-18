@@ -1,26 +1,29 @@
-#!/bin/sh
+#!/bin/bash
+# Oracle Java SDK, Gradle and IntelliJ IDEA
+
+set -e
+FOLDER=$(cd "$(dirname $0)"; pwd)
+source $FOLDER/../../_utils.sh
 
 # Google Cloud Platform requires Java 7. Feel free to upgrade to Java 8 if you are not using it
 # Select a concrete Java version:
-# update-java-alternatives -s java-7-oracle
-if test ! $(which java)
-then
-  echo "  Installing Java."
+# update-java-alternatives -s java-8-oracle
+if test ! $(which java); then
+  echo "Installing Java"
   sudo add-apt-repository ppa:webupd8team/java
   sudo apt-get update > /tmp/java-install.log
   sudo apt-get -y install oracle-java7-installer oracle-java8-installer
+  source ~/.bash_profile
 fi
+extra_set JAVA_HOME=$(echo $(readlink -e $(which java)) | sed 's/oracle.*/oracle/')
 
-
-if test ! $(which gradle)
-then
+if test ! $(which gradle); then
   sudo add-apt-repository ppa:cwchien/gradle
   sudo apt-get update >> /tmp/java-install.log
   sudo apt-get -y install gradle
 fi
 
-if [ ! -d /opt/idea ]
-then
+if [ ! -d /opt/idea ]; then
   URL=http://download-cf.jetbrains.com/idea/ideaIC-13.1.4b.tar.gz
   FILENAME=$(echo $URL | grep -o 'idea[^/]\+')
   echo "Installing IntelliJ IDEA into /opt/$(echo $FILENAME | sed s/\.tar\.gz//)"

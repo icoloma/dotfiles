@@ -18,6 +18,9 @@ Once your installation is complete you will have to manually add the following:
 
 You should start with .functions, .aliases and .gitconfig. Good stuff.
 
+~/.extra will contain anything that you don't want to commit back to the git repo, like 
+configuration-specific stuff.
+
 ## What is included here
 
 A lot of bash and git configuration, some handy aliases for everyday tasks (like launching a web server on the command line, or getting the public IP of this machine on the Internet). But also:

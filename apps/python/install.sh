@@ -1,5 +1,5 @@
-#!/bin/sh
-# Install python
+#!/bin/bash
+# Python, pip and virtualenv
 
 if test ! $(which pip)
 then

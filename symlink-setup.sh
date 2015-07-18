@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install all symlinks from the dotfiles folder
 
-source ./_utils
+source ./_utils.sh
 
 # finds all .dotfiles in this folder
 declare -a FILES_TO_SYMLINK=$(find dotfiles -maxdepth 1 -type f -name ".*" -not -name .DS_Store -not -name .git -not -name .osx)

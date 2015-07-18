@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Image processing: gimp, inkscape and converter tools
 # Also, see video/install.sh
 
@@ -16,6 +16,6 @@ fi
 
 if test ! $(which avconv)
 then
-  echo "  Installing video editing tools."
+  echo "Installing video editing tools."
   sudo apt-get -y install libav-tools
 fi

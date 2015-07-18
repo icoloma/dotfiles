@@ -113,3 +113,27 @@ print_success() {
     # Print output in green
     printf "\e[0;32m  [✔] $1\e[0m\n"
 }
+
+extra_set() {
+
+    # Set an environment variable in ~/.extra, overwrite if it's already there
+    # $1 the name and value of the entry, in the form NAME=VALUE
+    # $2 the comment to use in the file (optional)
+
+    # Guarantee that the file is there
+    touch ~/.extra
+
+    local name=$(echo $1 | sed 's/=.*//')
+
+    if test ! "$(grep $name ~/.extra)"; then
+        if [ ! -z "$2" ]; then
+            echo >> ~/.extra
+            echo "# $2" >> ~/.extra
+        fi
+        echo "export $1" >> ~/.extra
+    else
+        # escape special chars http://stackoverflow.com/questions/407523/escape-a-string-for-a-sed-replace-pattern
+        sed -i -e "s/$name=.*/$(echo $1 | sed -e 's/[]\/$*.^|[]/\\&/g')/g" ~/.extra
+    fi
+
+}

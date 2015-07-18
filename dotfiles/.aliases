@@ -68,3 +68,10 @@ alias emptytrash="sudo rm -rfv /media/*/*/.Trash-1000; rm -rfv ~/.local/share/Tr
 #for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 #    alias "$method"="lwp-request -m '$method'"
 #done
+
+# This is still WIP. It may be better to just open kazam
+# usage: record_video ~/Video/file.mp4
+alias record_video='avconv -v warning -f alsa -i default -f x11grab -r 15 -s wxga -i :0.0 -vcodec libx264 -preset ultrafast -threads auto -y -metadata title="Captured video" -strict experimental '
+
+# Google Cloud Platform
+alias gce='gcloud compute'

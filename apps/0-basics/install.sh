@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # A lot of small, super necessary tools
 
 # Multiple Clipboards

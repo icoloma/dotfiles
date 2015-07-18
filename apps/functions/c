@@ -1,2 +1,0 @@
-# enter "c project_name" to change folder to a given project
-cd $PROJECTS/$1;
