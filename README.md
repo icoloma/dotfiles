@@ -10,7 +10,7 @@ This is the dotfiles repository used inside Extrema Sistemas. It's a mixture fro
 * Read and memorize the git and bash shortcuts
 * Go into the `apps` folder and start installing your selection of tools
 
-Once the installation is complete you will have to manually add a `~/.gitconfig.local` file with your user account information:
+Once the installation is complete you should add a `~/.gitconfig.local` file with your user account information:
 
 ```
 [user]
@@ -20,9 +20,9 @@ Once the installation is complete you will have to manually add a `~/.gitconfig.
 
 ## Start reading
 
-You should start with .functions, .aliases and .gitconfig. Good stuff.
+You should start with `.functions`, `.aliases` and `.gitconfig`. Good stuff.
 
-~/.extra will contain anything that you don't want to commit back to the git repo.
+`~/.extra` will contain anything that you don't want to commit back to the git repo.
 
 If you decide to install fasd (you should!) it pays off to read [the one-page documentation](https://github.com/clvv/fasd).
 
