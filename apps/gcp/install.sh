@@ -20,7 +20,7 @@ then
     ln -sf ~/google-cloud-sdk/bin/gsutil ~/bin
     ln -sf ~/google-cloud-sdk/bin/bq ~/bin
 
-    printf "\n# Google Cloud Platform Config\nsource $HOME/google-cloud-sdk/completion.bash.inc" >> ~/.extra
+    printf "\n# Google Cloud Platform Config\nsource $HOME/google-cloud-sdk/completion.bash.inc\n" >> ~/.extra
 
     if test ! "$(grep 'alias gce' ~/.extra)"; then
       echo "alias gce='gcloud compute'" >> ~/.extra
