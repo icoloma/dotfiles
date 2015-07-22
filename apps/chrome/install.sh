@@ -3,9 +3,6 @@
 
 if test ! $(which google-chrome)
 then
-  echo "Installing Google Chrome"
-  sudo apt-get -y install libxss1 libappindicator1 libindicator7
-  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb > /tmp/google-chrome.deb
-  sudo dpkg -i /tmp/google-chrome.deb
-  google-chrome&
+  echo "Installing Google Chrome. You will have to do this by hand :)"
+  xdg-open http://www.google.com/chrome
 fi

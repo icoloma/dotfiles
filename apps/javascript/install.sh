@@ -23,20 +23,20 @@ fi
 
 if test ! $(which gulp); then
   echo "Installing gulp."
-  npm -g install gulp
+  sudo npm -g install gulp
 fi
 
 if test ! $(which grunt); then
   echo "Installing grunt."
-  npm -g install grunt-cli
+  sudo npm -g install grunt-cli
 fi
 
 # if test ! $(which jshint); then
 #   echo "Installing JSHint."
-#   npm -g install jshint jsxhint
+#   sudo npm -g install jshint jsxhint
 # fi
 
 if test ! $(which casperjs); then
   echo "Installing CasperJS."
-  npm -g install casperjs
+  sudo npm -g install casperjs
 fi
