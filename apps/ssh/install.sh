@@ -1,8 +1,8 @@
 #!/bin/bash
-# Generate key pair for SSH
+# SSH key pair 
 
-if [ ! -f ~/.ssh/id_rsa ]
-then
+if [ ! -f ~/.ssh/id_rsa ]; then
   echo "Generating key pair for SSH"
   ssh-keygen
 fi
+
