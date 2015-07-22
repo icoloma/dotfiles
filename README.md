@@ -35,3 +35,16 @@ A lot of bash and git configuration, some handy aliases for everyday tasks (like
 * Some installation scripts for tools that we consider important for day-to-day development, like gimp, inkscape or terminator.
 
 We hope you also find it useful.
+
+## TL;DR
+
+This is not what you are looking for:
+
+```
+git clone git@github.com:icoloma/dotfiles.git .dotfiles
+cd .dotfiles
+./setup.sh
+./symlink-setup.sh
+cd apps
+for i in */install.sh; do $i; done
+```
