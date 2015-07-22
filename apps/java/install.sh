@@ -13,6 +13,7 @@ if test ! $(which java); then
   sudo add-apt-repository ppa:webupd8team/java
   sudo apt-get update > /tmp/java-install.log
   sudo apt-get -y install oracle-java7-installer oracle-java8-installer
+  sudo update-java-alternatives -s java-7-oracle
   source ~/.bash_profile
 fi
 extra_set JAVA_HOME=$(echo $(readlink -e $(which java)) | sed 's/oracle.*/oracle/')
@@ -24,29 +25,8 @@ if test ! $(which gradle); then
 fi
 
 if [ ! -d /opt/idea ]; then
-  URL=http://download-cf.jetbrains.com/idea/ideaIC-13.1.4b.tar.gz
-  FILENAME=$(echo $URL | grep -o 'idea[^/]\+')
-  echo "Installing IntelliJ IDEA into /opt/$(echo $FILENAME | sed s/\.tar\.gz//)"
-  wget -O /tmp/$FILENAME $URL
-  tar -xvzf /tmp/$FILENAME -C /tmp > /tmp/idea-install.log
-  sudo mv /tmp/idea*/ /opt
-
-  echo 'Creating launcher'
-  mkdir -p ~/.local/share/applications/
-  EXEC=$(ls /opt/idea-IC*/bin/idea.sh | sort --version-sort | head -1)
-  echo "
-  [Desktop Entry]
-  Version=1.0
-  Type=Application
-  Name=IntelliJ IDEA Community Edition
-  Icon=$(echo $EXEC | sed s/.sh/.png/)
-  Exec=$EXEC %f
-  Comment=Develop with pleasure!
-  Categories=Development;IDE;
-  Terminal=false
-  StartupWMClass=jetbrains-idea-ce
-  " > ~/.local/share/applications/jetbrains-idea-ce.desktop
-  #$(EXEC) >> /tmp/idea-install.log
-
+  echo "You have to install IntelliJ into /opt/idea yourself, I'm afraid."
+  echo "When prompted to import settings, use idea-settings.jar in this folder"
+  xdg-open https://www.jetbrains.com/idea/download/
 fi
 
