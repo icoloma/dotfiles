@@ -31,6 +31,7 @@ then
   fi
 
   ~/google-cloud-sdk/gcloud components update app-engine-python app-engine-java app-engine-java
+  ~/google-cloud-sdk/gcloud components update
 fi
 
 extra_set GOOGLE_CLOUD_HOME=$HOME/google-cloud-sdk
