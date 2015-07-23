@@ -22,6 +22,11 @@ if test ! $(which gradle); then
   sudo add-apt-repository ppa:cwchien/gradle
   sudo apt-get update >> /tmp/java-install.log
   sudo apt-get -y install gradle
+  if [ ! -e ~/.gradle/gradle.properties ]; then
+    mkdir -p ~/.gradle
+    echo "# https://docs.gradle.org/2.5/userguide/gradle_daemon.html
+org.gradle.daemon=true" >> ~/.gradle/gradle.properties
+  fi
 fi
 
 if [ ! -d /opt/idea ]; then
