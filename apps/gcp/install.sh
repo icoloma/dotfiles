@@ -20,13 +20,16 @@ then
     ln -sf ~/google-cloud-sdk/bin/gsutil ~/bin
     ln -sf ~/google-cloud-sdk/bin/bq ~/bin
 
-    printf "\n# Google Cloud Platform Config\nsource $HOME/google-cloud-sdk/completion.bash.inc" >> ~/.extra
+    printf "\n# Google Cloud Platform Config\nsource $HOME/google-cloud-sdk/completion.bash.inci\n" >> ~/.extra
 
     if test ! "$(grep 'alias gce' ~/.extra)"; then
       echo "alias gce='gcloud compute'" >> ~/.extra
     fi
+    extra_set GOOGLE_CLOUD_HOME=$HOME/google-cloud-sdk
+    extra_set APPENGINE_HOME=/opt/appengine-java-sdk
 
-    printf '\n' >> ~/.extra
+    echo "Please download the App Engine SDK, install in /opt and ln -s into /opt/appengine-java-sdk"
+    xdg-open https://cloud.google.com/appengine/downloads
 
   fi
 
@@ -34,4 +37,3 @@ then
   ~/google-cloud-sdk/gcloud components update
 fi
 
-extra_set GOOGLE_CLOUD_HOME=$HOME/google-cloud-sdk
