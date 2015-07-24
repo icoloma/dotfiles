@@ -5,7 +5,7 @@ set -e
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 
-# Install Sublime Text Editor 3 
+# Install Sublime Text Editor 3
 # see http://askubuntu.com/questions/172698/how-do-i-install-sublime-text-2-3
 if test ! $(which subl); then
 	echo "Installing Sublime Text Editor 3"
@@ -19,6 +19,7 @@ mkdir -p "$HOME/.config/sublime-text-3/Packages/User"
 
 ln -sf "$FOLDER/duplicate_lines.sublime-macro" "$HOME/.config/sublime-text-3/Packages/User/duplicate_lines.sublime-macro"
 ln -sf "$FOLDER/Default (Linux).sublime-keymap" ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
+ln -sf "$FOLDER/*.sublime-snippet" ~/.config/sublime-text-3/Packages/User/
 
 # Install all plugins required for a healthy and long life
 
@@ -26,4 +27,4 @@ SUBLIME_PACKAGE="$HOME/.config/sublime-text-3/Installed Packages/Package Control
 [ -f "$SUBLIME_PACKAGE" ] || wget -O "$SUBLIME_PACKAGE" https://sublime.wbond.net/Package%20Control.sublime-package
 
 ln -sf "$FOLDER/Package Control.sublime-settings" ~/.config/sublime-text-3/Packages/User/
-  
+
