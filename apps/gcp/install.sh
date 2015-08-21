@@ -19,6 +19,7 @@ then
     ln -sf ~/google-cloud-sdk/bin/gcloud ~/bin
     ln -sf ~/google-cloud-sdk/bin/gsutil ~/bin
     ln -sf ~/google-cloud-sdk/bin/bq ~/bin
+    ln -sf ~/google-cloud-sdk/platform/google_appengine/appcfg.py ~/bin
 
     printf "\n# Google Cloud Platform Config\nsource $HOME/google-cloud-sdk/completion.bash.inci\n" >> ~/.extra
 
