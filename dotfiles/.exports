@@ -8,3 +8,9 @@ export EDITOR="vim"
 # github.com/trapd00r/LS_COLORS
 command -v gdircolors >/dev/null 2>&1 || alias gdircolors="dircolors"
 eval "$(gdircolors -b ~/.dircolors)"
+
+# IntelliJ keyboard stops working, but this workaround breaks i18n keys in Ubuntu
+# https://youtrack.jetbrains.com/issue/IDEA-78860
+# export IBUS_ENABLE_SYNC_MODE=1
+
+# instead, run this:  XMODIFIERS='' idea.sh

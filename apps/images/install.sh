@@ -5,17 +5,17 @@
 if test ! $(which gimp)
 then
 	echo "Installing image processing tools"
-	sudo apt-get -y install gimp gimp-help-en gimp-data gimp-plugin-registry gimp-data-extras 
+	sudo apt-get -y install gimp gimp-help-en gimp-data gimp-plugin-registry gimp-data-extras
 fi
 
 if test ! $(which inkscape)
 then
 	echo "Installing image processing tools"
-	sudo apt-get -y install inkscape 
+	sudo apt-get -y install inkscape
 fi
 
 if test ! $(which avconv)
 then
   echo "Installing video editing tools."
-  sudo apt-get -y install libav-tools
+  sudo apt-get -y install libav-tools libavcodec-extra-54
 fi
