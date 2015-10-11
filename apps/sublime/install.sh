@@ -19,7 +19,7 @@ mkdir -p "$HOME/.config/sublime-text-3/Packages/User"
 
 ln -sf "$FOLDER/duplicate_lines.sublime-macro" "$HOME/.config/sublime-text-3/Packages/User/duplicate_lines.sublime-macro"
 ln -sf "$FOLDER/Default (Linux).sublime-keymap" ~/.config/sublime-text-3/Packages/User/Default\ \(Linux\).sublime-keymap
-ln -sf "$FOLDER/*.sublime-snippet" ~/.config/sublime-text-3/Packages/User/
+ln -sf $FOLDER/*.sublime-snippet ~/.config/sublime-text-3/Packages/User/
 
 # Install all plugins required for a healthy and long life
 
