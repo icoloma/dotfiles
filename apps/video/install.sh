@@ -14,5 +14,7 @@ if test ! $(which openshot); then
 fi
 
 if test ! $(which kazam); then
-  sudo apt-get -y install kazam
+  sudo add-apt-repository -y ppa:kazam-team/unstable-series
+  sudo apt-get update
+  sudo apt-get install kazam python3-cairo python3-xlib
 fi
