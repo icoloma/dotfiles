@@ -9,7 +9,7 @@ source $FOLDER/../../_utils.sh
 if test ! $(which docker)
 then
   echo "Installing docker"
-  sudo apt-get -y install docker.io
+  sudo apt-get -y install docker-engine
   sudo usermod -aG docker $USER
 fi
 
