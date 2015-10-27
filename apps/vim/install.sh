@@ -13,3 +13,4 @@ if [ ! -s ~/.vim/colors/molotov.vim ]; then
   mkdir -p ~/.vim/colors/
   ln -s ${FOLDER}/molotov.vim ~/.vim/colors/molotov.vim
 fi
+mkdir -p ~/.vim/backups ~/.vim/swaps ~/.vim/undo

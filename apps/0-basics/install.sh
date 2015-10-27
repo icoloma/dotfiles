@@ -7,6 +7,9 @@ PKG="diodon diodon-plugins"
 # Media player
 PKG="$PKG vlc"
 
+# Better than du and top
+PKG="$PKG htop ncdu"
+
 # Compression
 PKG="$PKG unrar rar"
 
