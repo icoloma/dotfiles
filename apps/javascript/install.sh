@@ -18,7 +18,10 @@ sudo apt-get -y install libcairo2-dev libjpeg-dev libgif-dev
 
 if test ! $(which node); then
   curl -sL https://deb.nodesource.com/setup | sudo bash -
-  sudo apt-get -y install nodejs
+
+  # Install n, manager for multiple versions of node
+  sudo npm install -g n
+  n latest
 fi
 
 if test ! $(which gulp); then
