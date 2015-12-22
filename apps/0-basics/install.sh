@@ -13,6 +13,9 @@ PKG="$PKG htop ncdu"
 # Compression
 PKG="$PKG unrar rar"
 
+# Text-to-speech
+PKG="$PKG espeak"
+
 # Test one application. If it's not there, install everything
 if test ! $(which diodon)
 then

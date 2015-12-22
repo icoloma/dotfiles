@@ -75,3 +75,6 @@ alias record_video='avconv -v warning -f alsa -i default -f x11grab -r 15 -s wxg
 
 # because, fuck https://twitter.com/liamosaur/status/506975850596536320
 alias fuck='sudo $(history -p \!\!)'
+
+# say text from the command line, like: dosomething && say "I'm done now"
+alias say='echo "$1" | espeak -s 120 2>/dev/null'
