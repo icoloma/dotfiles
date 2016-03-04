@@ -16,6 +16,9 @@ PKG="$PKG unrar rar"
 # Text-to-speech
 PKG="$PKG espeak"
 
+# Basics
+PKG="$PKG traceroute"
+
 # Test one application. If it's not there, install everything
 if test ! $(which diodon)
 then
