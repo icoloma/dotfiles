@@ -74,3 +74,6 @@
   path = ~/.gitconfig.local
 [push]
 	default = simple
+[user]
+	name = Nacho Coloma
+	email = icoloma@gmail.com
