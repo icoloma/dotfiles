@@ -38,3 +38,9 @@ then
   ~/google-cloud-sdk/gcloud components update
 fi
 
+if test ! $(which cloud_sql_proxy)
+then
+  echo "Installing Google Cloud SQL Proxy"
+  wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O ~/bin/cloud_sql_proxy
+  chmod 755 ~/bin/cloud_sql_proxy
+fi
