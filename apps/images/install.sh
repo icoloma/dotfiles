@@ -4,14 +4,20 @@
 
 if test ! $(which gimp)
 then
-	echo "Installing image processing tools"
+	echo "Installing gimp"
 	sudo apt-get -y install gimp gimp-help-en gimp-data gimp-plugin-registry gimp-data-extras
 fi
 
 if test ! $(which inkscape)
 then
-	echo "Installing image processing tools"
+	echo "Installing inkscape"
 	sudo apt-get -y install inkscape
+fi
+
+if test ! $(which scribus)
+then
+  echo "Installing scribus"
+  sudo apt-get -y install scribus icc-profiles scribus-template
 fi
 
 if test ! $(which avconv)
