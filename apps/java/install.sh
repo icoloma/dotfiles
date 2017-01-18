@@ -12,7 +12,7 @@ if test ! $(which java); then
   echo "Installing Java"
   sudo add-apt-repository ppa:webupd8team/java
   sudo apt-get update > /tmp/java-install.log
-  sudo apt-get -y install oracle-java7-installer oracle-java8-installer
+  sudo apt-get -y install oracle-java7-installer oracle-java8-installer oracle-java8-set-default
   sudo update-java-alternatives -s java-7-oracle
   source ~/.bash_profile
 fi

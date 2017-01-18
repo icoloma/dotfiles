@@ -586,7 +586,7 @@ augroup END
 " Notes.vim {{{
 augroup notes_config
   autocmd!
-  let g:notes_directories = ['~/Dropbox/Notes']
+  let g:notes_directories = ['~/.vim/Notes']
 augroup END
 " }}}
 
