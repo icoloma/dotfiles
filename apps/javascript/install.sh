@@ -14,8 +14,4 @@ then
   nvm install $VERSION
 fi
 
-if test ! $(which gulp); then
-  echo "Installing gulp."
-  npm -g install gulp
-fi
 

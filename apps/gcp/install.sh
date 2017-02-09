@@ -34,8 +34,6 @@ then
 
   fi
 
-  ~/google-cloud-sdk/gcloud components update app-engine-python app-engine-java app-engine-java
-  ~/google-cloud-sdk/gcloud components update
 fi
 
 if test ! $(which cloud_sql_proxy)

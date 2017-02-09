@@ -38,6 +38,9 @@ then
 	sudo apt-get autoremove
 fi
 
+# Get normal scrollbars
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
+
 # Not really working (ಠ_ಠ)
 # Lock to launcher? test this
 # gsettings set com.canonical.Unity.Launcher favorites "['application://gnome-terminal.desktop', 'application://google-chrome.desktop', 'application://sublime-text-2.desktop', 'application://jetbrains-idea-ce.desktop', 'application://nautilus.desktop', 'application://gnome-screenshot.desktop', 'application://gimp.desktop', 'unity://running-apps', 'unity://expo-icon', 'unity://devices']"

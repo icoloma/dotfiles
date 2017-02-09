@@ -9,10 +9,6 @@ if test ! $(which gifsicle); then
   sudo apt-get -y install gifsicle
 fi
 
-if test ! $(which openshot); then
-  sudo apt-get -y install openshot
-fi
-
 if test ! $(which kazam); then
   sudo add-apt-repository -y ppa:kazam-team/unstable-series
   sudo apt-get update
