@@ -1,7 +1,9 @@
 #!/bin/bash
 # A lot of small, super necessary tools
 
-# Multiple Clipboards
+# Multiple Clipboard Manager. After installing, add a shortcut:
+# https://esite.ch/2015/07/using-custom-shortcuts-of-de-as-diodon-hotkey/
+# TODO: do this automatically in the CLI: http://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from-terminal
 PKG="diodon diodon-plugins"
 
 # Media player
@@ -37,6 +39,9 @@ then
 	sudo apt-get upgrade
 	sudo apt-get autoremove
 fi
+
+# Get normal scrollbars
+gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 # Not really working (ಠ_ಠ)
 # Lock to launcher? test this

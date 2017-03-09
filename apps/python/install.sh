@@ -11,6 +11,7 @@ fi
 
 # pytest
 if test ! $(which py.test)
+then
     sudo pip install -U pytest
 fi
 
