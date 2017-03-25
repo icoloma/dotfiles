@@ -4,7 +4,8 @@
 # Multiple Clipboard Manager. After installing, add a shortcut:
 # https://esite.ch/2015/07/using-custom-shortcuts-of-de-as-diodon-hotkey/
 # TODO: do this automatically in the CLI: http://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from-terminal
-PKG="diodon diodon-plugins"
+# TODO: is the keyboard part necessary? It seems to come already configured now.
+PKG="diodon unity-scope-diodon"
 
 # Media player
 PKG="$PKG vlc"
