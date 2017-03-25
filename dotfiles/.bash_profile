@@ -97,3 +97,6 @@ shopt -s nocaseglob;
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell;
+
+# Environment variables
+export APPENGINE_HOME=/opt/appengine-java-sdk
