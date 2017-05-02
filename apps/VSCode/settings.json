@@ -8,5 +8,10 @@
   "window.zoomLevel": 0,
   "editor.formatOnPaste": true,
   "editor.renderWhitespace": "none",
-  "editor.wordWrap": true
+  "editor.wordWrap": true,
+  "files.exclude": {
+    "**/.git": true, // this is a default value
+    "build/": true, // this is a default value
+    "node_modules": true 
+  }
 }
