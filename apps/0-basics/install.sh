@@ -9,11 +9,14 @@
 # Media player
 PKG="vlc"
 
+# Can focus windows with a keyboard shortcut like Meta+2 with Cinnamon (like in Unity)
+PKG="$PKG wmctrl"
+
 # Better than du and top
 PKG="$PKG htop ncdu"
 
 # Compression
-PKG="$PKG unrar rar"
+PKG="$PKG unrar rar unzip zip"
 
 # Text-to-speech
 PKG="$PKG espeak"
