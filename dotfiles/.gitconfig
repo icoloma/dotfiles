@@ -27,7 +27,7 @@
   }; f"
 
 [color]
-  ui = always
+  ui = auto
 
 [core]
   excludesfile = ~/.gitignore
