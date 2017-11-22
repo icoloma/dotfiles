@@ -5,16 +5,18 @@
 # https://esite.ch/2015/07/using-custom-shortcuts-of-de-as-diodon-hotkey/
 # TODO: do this automatically in the CLI: http://askubuntu.com/questions/597395/how-to-set-custom-keyboard-shortcuts-from-terminal
 # TODO: is the keyboard part necessary? It seems to come already configured now.
-PKG="diodon unity-scope-diodon"
 
 # Media player
-PKG="$PKG vlc"
+PKG="vlc"
+
+# Can focus windows with a keyboard shortcut like Meta+2 with Cinnamon (like in Unity)
+PKG="$PKG wmctrl"
 
 # Better than du and top
 PKG="$PKG htop ncdu"
 
 # Compression
-PKG="$PKG unrar rar"
+PKG="$PKG unrar rar unzip zip"
 
 # Text-to-speech
 PKG="$PKG espeak"
@@ -23,7 +25,7 @@ PKG="$PKG espeak"
 PKG="$PKG traceroute"
 
 # Test one application. If it's not there, install everything
-if test ! $(which diodon)
+if test ! $(which htop)
 then
 	echo "Installing $PKG"
 	sudo apt-get -y install $PKG
