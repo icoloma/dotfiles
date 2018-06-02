@@ -14,12 +14,6 @@ then
 	sudo apt-get -y install inkscape
 fi
 
-if test ! $(which scribus)
-then
-  echo "Installing scribus"
-  sudo apt-get -y install scribus icc-profiles scribus-template
-fi
-
 if test ! $(which avconv)
 then
   echo "Installing video editing tools."

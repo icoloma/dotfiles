@@ -5,9 +5,9 @@
 set -e
 FOLDER=$(cd "$(dirname $0)"; pwd)
 
-if test ! $(which gifsicle); then
-  sudo apt-get -y install gifsicle
-fi
+# TODO: Install gifsky or peek (peek is switching to gifski under the covers) when available in ubuntu
+# https://github.com/phw/peek
+# https://gif.ski/
 
 if test ! $(which kazam); then
   sudo add-apt-repository -y ppa:kazam-team/unstable-series

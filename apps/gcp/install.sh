@@ -5,6 +5,8 @@ set -e
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 
+# TODO: install kubectx kubens kube-ps1
+
 if test ! $(which gcloud)
 then
   echo "Installing Google Cloud Platform SDK"

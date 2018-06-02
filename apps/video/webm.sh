@@ -17,7 +17,7 @@ fi
 
 FILENAME=$(echo "$1" | sed 's/\.[^.]*$//')
 
-#Note: Audio will be dropped. To keep the audio, remove "-an"
+# Note: Audio will be dropped. To keep the audio, remove "-an"
 # To set a maximum width, add scale=-1:480 (replace 480 with the desired width)
 
 # TAKE CARE: when exporting use pixel ratio 1:1, proportions 16/9 or 4/3, dimensions whatever.
