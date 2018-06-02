@@ -24,6 +24,9 @@ PKG="$PKG espeak"
 # Basics
 PKG="$PKG traceroute"
 
+# the j alias: https://github.com/wting/autojump
+PKG="$PKG autojump"
+
 # Test one application. If it's not there, install everything
 if test ! $(which htop)
 then
