@@ -13,7 +13,7 @@ if test ! $(which java); then
   sudo add-apt-repository ppa:webupd8team/java
   sudo apt-get update > /tmp/java-install.log
   sudo apt-get -y install oracle-java7-installer oracle-java8-installer oracle-java8-set-default
-  sudo update-java-alternatives -s java-7-oracle
+  sudo update-java-alternatives -s java-8-oracle
   source ~/.bash_profile
 fi
 extra_set JAVA_HOME=$(echo $(readlink -e $(which java)) | sed 's/oracle.*/oracle/')
