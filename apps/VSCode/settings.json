@@ -13,5 +13,12 @@
     "**/.git": true, // this is a default value
     "build/": true, // this is a default value
     "node_modules": true 
-  }
+  },
+  "extensions.ignoreRecommendations": false,
+  "workbench.startupEditor": "newUntitledFile",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // combine with Prettier for fun and profit
+  "editor.formatOnSave": true
 }

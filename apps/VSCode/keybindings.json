@@ -7,6 +7,13 @@
     { "key": "ctrl+shift+y","command": "editor.action.transformToLowercase","when": "editorTextFocus"
     },
     // disable use of tab key for setting focus
-    { "key": "ctrl+shift+alt+m",                "command": "editor.action.toggleTabFocusMode" },
+    {
+      "key": "ctrl+shift+alt+m",
+      "command": "editor.action.toggleTabFocusMode"
+    },
+    {
+      "key": "ctrl+m",
+      "command": "-editor.action.toggleTabFocusMode"
+    },
 
 ]
