@@ -1,8 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
-      // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
+  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
-  
   // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
   "editor.detectIndentation": false,
   "window.zoomLevel": 0,
@@ -12,13 +11,14 @@
   "files.exclude": {
     "**/.git": true, // this is a default value
     "build/": true, // this is a default value
-    "node_modules": true 
+    "node_modules": true
   },
   "extensions.ignoreRecommendations": false,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-
   // combine with Prettier for fun and profit
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  // The default language mode that is assigned to new files.
+  "files.defaultLanguage": "markdown"
 }
