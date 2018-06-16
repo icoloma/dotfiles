@@ -24,6 +24,9 @@ PKG="$PKG traceroute"
 # the j alias: https://github.com/wting/autojump
 PKG="$PKG autojump"
 
+# rw ntfs systems
+PKG="$PKG gparted ntfs-3g"
+
 # Test one application. If it's not there, install everything
 if test ! $(which htop)
 then
