@@ -1,41 +1,42 @@
 [global_config]
-  window_state = maximise
   suppress_multiple_term_dialog = True
+  window_state = maximise
 [keybindings]
-[profiles]
-  [[default]]
-    background_image = None
 [layouts]
   [[default]]
     [[[child0]]]
-      position = 65:24
-      type = Window
       order = 0
       parent = ""
+      position = 65:24
       size = 1855, 1056
+      type = Window
     [[[child1]]]
-      position = 927
-      type = HPaned
       order = 0
       parent = child0
+      position = 927
+      type = HPaned
     [[[child3]]]
+      order = 1
+      parent = child1
       position = 529
       type = VPaned
-      order = 1
-      parent = child1
     [[[terminal2]]]
-      profile = default
-      type = Terminal
       order = 0
       parent = child1
-    [[[terminal5]]]
       profile = default
       type = Terminal
-      order = 1
-      parent = child3
     [[[terminal4]]]
-      profile = default
-      type = Terminal
       order = 0
       parent = child3
+      profile = default
+      type = Terminal
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
 [plugins]
+[profiles]
+  [[default]]
+    background_image = None
+    scroll_on_output = False
