@@ -1,5 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
+  // Controls whether debug view should be open on debugging session start.
+  "debug.openDebug": "openOnSessionStart",
   // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
   // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
@@ -19,5 +21,6 @@
   // combine with Prettier for fun and profit
   "editor.formatOnSave": true,
   // The default language mode that is assigned to new files.
-  "files.defaultLanguage": "markdown"
+  "files.defaultLanguage": "markdown",
+  "javascript.updateImportsOnFileMove.enabled": "never"
 }
