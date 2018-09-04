@@ -10,8 +10,9 @@ fi
 
 if [ ! -L ~/.config/mimeapps.list ]
 then
-  rm -f ~/.config/mimeapps.list
+  rm -f ~/.config/mimeapps.list ~/.local/share/applications/mimeapps.list
   echo "Configuring default applications associated to mime types"
-  mkdir -p ~/.config/
+  mkdir -p ~/.config/ ~/.local/share/applications/
   ln -s "$FOLDER/mimeapps.list" ~/.config/mimeapps.list
+  ln -s "$FOLDER/mimeapps.list" ~/.local/share/applications/mimeapps.list
 fi
