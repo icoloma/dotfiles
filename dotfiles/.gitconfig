@@ -77,3 +77,6 @@
 [user]
 	name = Nacho Coloma
 	email = icoloma@gmail.com
+# remove locally branches that have been deleted in origin
+[fetch]
+  prune = true
