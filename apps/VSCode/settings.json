@@ -6,7 +6,7 @@
   "editor.tabSize": 2,
   // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
   "editor.detectIndentation": false,
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 1,
   "editor.renderWhitespace": "none",
   "editor.wordWrap": true,
   "files.exclude": {
@@ -18,11 +18,11 @@
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  // combine with Prettier for fun and profit
-  "editor.formatOnSave": true,
   // The default language mode that is assigned to new files.
   "files.defaultLanguage": "markdown",
   "javascript.updateImportsOnFileMove.enabled": "never",
   // Controls if opened editors show as preview. Preview editors are reused until they are kept (e.g. via double click or editing) and show up with an italic font style.
-  "workbench.editor.enablePreview": false
+  "workbench.editor.enablePreview": false,
+  // combine with Prettier for fun and profit
+  "editor.formatOnSave": true
 }
