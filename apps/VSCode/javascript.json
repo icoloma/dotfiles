@@ -15,18 +15,15 @@
   "Create React View": {
     "prefix": "react",
     "body": [
-      "import PropTypes from 'prop-types'",
       "import React from 'react';",
+      "",
       "export default class $1View extends React.Component {",
       "  render() {",
       "    return (",
       "      $0",
       "    )",
       "  }",
-      "}",
-      "$1View.propTypes = {",
-      "  $2: PropTypes.object.isRequired",
-      "};"
+      "}"
     ]
   }
 }
