@@ -25,5 +25,19 @@
       "  }",
       "}"
     ]
+  },
+  "Create Jest": {
+    "prefix": "jest",
+    "body": [
+      "import React from 'react';",
+      "import renderer from 'react-test-renderer';",
+      "",
+      "describe('$1', function () {",
+      "  it('should work', () => {",
+      "    const tree = renderer.create(<$1 />);",
+      "    expect(tree.toJSON()).toMatchSnapshot();",
+      "  })",
+      "})"
+    ]
   }
 }
