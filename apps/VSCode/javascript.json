@@ -45,5 +45,11 @@
       "  })",
       "})"
     ]
+  },
+  "Matches snapshot": {
+    "prefix": "snap",
+    "body": [
+      "expect(tree).toMatchSnapshot();"
+    ]
   }
 }
