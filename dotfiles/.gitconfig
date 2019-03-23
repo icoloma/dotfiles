@@ -77,6 +77,11 @@
 [user]
 	name = Nacho Coloma
 	email = icoloma@gmail.com
+
 # remove locally branches that have been deleted in origin
 [fetch]
   prune = true
+
+# new branches are set to automatically track origin
+[branch]
+	autosetupmerge = always
