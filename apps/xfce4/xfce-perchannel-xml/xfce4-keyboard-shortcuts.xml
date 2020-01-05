@@ -42,8 +42,8 @@
       </property>
       <property name="XF86MonBrightnessDown" type="string" value="xbacklight -5"/>
       <property name="XF86MonBrightnessUp" type="string" value="xbacklight +5"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r"/>
       <property name="&lt;Primary&gt;&lt;Alt&gt;v" type="string" value="diodon"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;Print" type="string" value="xfce4-screenshooter -r -c"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
