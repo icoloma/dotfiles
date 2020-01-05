@@ -23,9 +23,8 @@
   "javascript.updateImportsOnFileMove.enabled": "never",
   // Controls if opened editors show as preview. Preview editors are reused until they are kept (e.g. via double click or editing) and show up with an italic font style.
   "workbench.editor.enablePreview": false,
-  // combine with Prettier for fun and profit
-  "editor.formatOnSave": true,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.gotoLocation.multiple": "goto"
+  "editor.gotoLocation.multiple": "goto",
+  "editor.formatOnSave": true
 }
