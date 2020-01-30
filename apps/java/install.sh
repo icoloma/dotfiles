@@ -6,10 +6,11 @@ FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 
 # Select a concrete Java version:
-# update-java-alternatives -s java-8-oracle
+# sudo update-alternatives --config java
+# sudo update-alternatives --config javac
 if test ! $(which java); then
   echo "Installing Java"
-  sudo apt-get -y install oracle-java8-installer oracle-java8-set-default
+  sudo apt-get -y install openjdk-11-jdk-headless
   source ~/.bash_profile
 fi
 
