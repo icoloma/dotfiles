@@ -14,10 +14,7 @@ if test ! $(which java); then
   source ~/.bash_profile
 fi
 
-if test ! $(which gradle); then
-#  sudo add-apt-repository ppa:cwchien/gradle
-  sudo apt-get -y install gradle
-fi
+# No need to install gradle. Use ./gradlew in your project instead
 
 if test ! $(which idea); then
   sudo snap install intellij-idea-community --classic

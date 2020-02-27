@@ -26,5 +26,6 @@
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.gotoLocation.multiple": "goto",
+  "html.mirrorCursorOnMatchingTag": false,
   "editor.formatOnSave": true
 }
