@@ -1,5 +1,4 @@
 #!/bin/bash
-# Docker is a container engine, more lightweight than a full-blown Virtual Machine engine
 # See also VirtualBox
 
 set -e

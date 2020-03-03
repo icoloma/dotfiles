@@ -64,11 +64,6 @@ elif [ -f /etc/bash_completion ]; then
     source /etc/bash_completion;
 fi;
 
-# homebrew completion
-if which brew > /dev/null; then
-    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
-fi;
-
 # Enable tab completion for `g` by marking it as an alias for `git`
 if type __git_complete &> /dev/null; then
     __git_complete g __git_main
@@ -92,4 +87,4 @@ shopt -s nocaseglob;
 shopt -s cdspell;
 
 # Environment variables
-export APPENGINE_HOME=/opt/appengine-java-sdk
+# export APPENGINE_HOME=/opt/appengine-java-sdk

@@ -5,8 +5,6 @@ set -e
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 
-# TODO: install kubectx kubens kube-ps1
-
 if test ! $(which gcloud)
 then
   echo "Installing Google Cloud Platform SDK"
@@ -31,16 +29,15 @@ then
     extra_set GOOGLE_CLOUD_HOME=$HOME/google-cloud-sdk
     extra_set APPENGINE_HOME=/opt/appengine-java-sdk
 
-    echo "Please download the App Engine SDK, install in /opt and ln -s into /opt/appengine-java-sdk"
-    xdg-open https://cloud.google.com/appengine/downloads
-
   fi
 
 fi
 
-if test ! $(which cloud_sql_proxy)
-then
-  echo "Installing Google Cloud SQL Proxy"
-  wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O ~/bin/cloud_sql_proxy
-  chmod 755 ~/bin/cloud_sql_proxy
-fi
+gcloud components update -q
+gcloud components install kubectl
+
+# if test ! $(which cloud_sql_proxy); then
+#   echo "Installing Google Cloud SQL Proxy"
+#   wget https://dl.google.com/cloudsql/cloud_sql_proxy.linux.amd64 -O ~/bin/cloud_sql_proxy
+#   chmod 755 ~/bin/cloud_sql_proxy
+# fi
