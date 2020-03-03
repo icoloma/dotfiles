@@ -1,4 +1,10 @@
-*.sublime-workspace
 *.swp
 *.orig
 bin/*
+
+# XFCE4
+apps/xfce4/xfce-perchannel-xml/thunar.xml
+apps/xfce4/xfce-perchannel-xml/xfce4-appfinder.xml
+apps/xfce4/xfce-perchannel-xml/xfce4-desktop.xml
+apps/xfce4/xfce-perchannel-xml/xfce4-panel.xml
+apps/xfce4/xfce-perchannel-xml/xfce4-settings-manager.xml
