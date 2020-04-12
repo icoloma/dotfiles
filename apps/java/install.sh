@@ -10,7 +10,7 @@ source $FOLDER/../../_utils.sh
 # sudo update-alternatives --config javac
 if test ! $(which java); then
   echo "Installing Java"
-  sudo apt-get -y install openjdk-11-jdk-headless
+  sudo apt-get -y install openjdk-11-source
   source ~/.bash_profile
 fi
 
