@@ -4,12 +4,9 @@ alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 alias lock="gnome-screensaver-command -l"
-
-alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
 
 # use coreutils `ls` if possible…
 hash gls >/dev/null 2>&1 || alias gls="ls"
@@ -38,10 +35,8 @@ alias la="ls -l | awk '
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
-
-
 # `cat` with beautiful colors. requires Pygments installed.
-#                              sudo easy_install -U Pygments
+# sudo easy_install -U Pygments
 alias c='pygmentize -O style=monokai -f console256 -g'
 
 # git root
@@ -61,18 +56,13 @@ alias v="vim"
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /media/*/*/.Trash-1000; rm -rfv ~/.local/share/Trash"
 
-
 # TODO: use aliases for JSON command line tools (could be curl, but there are better tools)
 #for method in GET HEAD POST PUT DELETE TRACE OPTIONS; do
 #    alias "$method"="lwp-request -m '$method'"
 #done
 
-# This is still WIP. It may be better to just open kazam
-# usage: record_video ~/Video/file.mp4
-alias record_video='avconv -v warning -f alsa -i default -f x11grab -r 15 -s wxga -i :0.0 -vcodec libx264 -preset ultrafast -threads auto -y -metadata title="Captured video" -strict experimental '
-
-# because, fuck https://twitter.com/liamosaur/status/506975850596536320
-alias fuck='sudo $(history -p \!\!)'
-
-# say text from the command line, like: dosomething && say "I'm done now"
-alias say='echo "$1" | espeak -s 120 2>/dev/null'
+# Create a script and assign exec permissions to it
+function create-script() {
+  echo -e "#\!/bin/bash\n#\necho -euo pipefail\n" > $1
+  chmod 755 $1
+}
