@@ -46,5 +46,5 @@ then
 	sudo apt-get autoremove
 fi
 
-# Get normal scrollbars
-gsettings set com.canonical.desktop.interface scrollbar-mode normal
+# install shellcheck
+sudo apt snap install shellcheck
