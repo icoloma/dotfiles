@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install packages and config to use XFCE4
 
-set -e -u
+set -euo pipefail
 
 FOLDER=$(cd "$(dirname $0)"; pwd)
 

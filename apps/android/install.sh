@@ -1,7 +1,7 @@
 #!/bin/bash
 # Android SDK and Ubuntu dependencies for Android
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 

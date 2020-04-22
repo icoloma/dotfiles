@@ -2,7 +2,7 @@
 # Video editing tools and such
 # Also, see gifify in .functions, and gifify.sh and webm.sh in this same folder
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 
 # TODO: Install gifsky or peek (peek is switching to gifski under the covers) when available in ubuntu

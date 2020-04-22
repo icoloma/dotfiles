@@ -2,7 +2,7 @@
 # Terminator, an iTerm equivalent for Linux that supports multiple panes.
 # It's like tmux, but works only in the local machine.
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 
 if test ! $(which terminator)

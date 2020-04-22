@@ -2,7 +2,7 @@
 # Kubernetes tools
 # kubectl is installed by gcp/install
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 

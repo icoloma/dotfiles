@@ -1,7 +1,7 @@
 #!/bin/bash
 # Oracle Java SDK, Gradle and IntelliJ IDEA
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 

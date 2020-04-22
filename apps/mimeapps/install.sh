@@ -1,6 +1,6 @@
 #!/bin/bash
 # Configure default programs to open files
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 
 if [ ! -L /usr/share/applications/icoloma-open-mail.desktop ]

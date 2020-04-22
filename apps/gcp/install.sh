@@ -1,7 +1,7 @@
 #!/bin/bash
 # Google Cloud Platform SDK
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 

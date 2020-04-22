@@ -1,7 +1,7 @@
 #!/bin/bash
 # Install plugins for vim
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 
 if [ ! -f ~/.vim/autoload/plug.vim ]; then

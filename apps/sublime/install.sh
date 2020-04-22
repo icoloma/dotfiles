@@ -1,7 +1,7 @@
 #!/bin/bash
 # Sublime Text Editor 3 with some plugins
 
-set -e
+set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 
