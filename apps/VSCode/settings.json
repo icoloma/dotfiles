@@ -1,32 +1,26 @@
 // Place your settings in this file to overwrite the default settings
 {
-  // Controls whether debug view should be open on debugging session start.
   "debug.openDebug": "openOnSessionStart",
-  // The number of spaces a tab is equal to. This setting is overriden based on the file contents when `editor.detectIndentation` is on.
   "editor.tabSize": 2,
-  // When opening a file, `editor.tabSize` and `editor.insertSpaces` will be detected based on the file contents.
   "editor.detectIndentation": false,
   "window.zoomLevel": 1,
   "editor.renderWhitespace": "none",
-  "editor.wordWrap": true,
+  "editor.wordWrap": "on",
   "files.exclude": {
-    "**/.git": true, // this is a default value
-    "build/": true, // this is a default value
+    "**/.git": true,
+    "build/": true,
     "node_modules": true
   },
   "extensions.ignoreRecommendations": false,
   "workbench.startupEditor": "newUntitledFile",
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  // The default language mode that is assigned to new files.
-  "files.defaultLanguage": "markdown",
+  "files.defaultLanguage": "typescript",
   "javascript.updateImportsOnFileMove.enabled": "never",
-  // Controls if opened editors show as preview. Preview editors are reused until they are kept (e.g. via double click or editing) and show up with an italic font style.
   "workbench.editor.enablePreview": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "editor.gotoLocation.multiple": "goto",
-  "html.mirrorCursorOnMatchingTag": false,
+  "editor.renameOnType": true,
   "editor.formatOnSave": true,
   "files.autoSave": "afterDelay",
   "editor.codeActionsOnSave": {
