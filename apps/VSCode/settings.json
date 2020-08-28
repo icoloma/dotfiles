@@ -22,7 +22,6 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "editor.renameOnType": true,
   "editor.formatOnSave": true,
-  "files.autoSave": "afterDelay",
   "editor.codeActionsOnSave": {
     "source.fixAll": true
   },
@@ -31,5 +30,14 @@
     "javascriptreact",
     "typescript",
     "typescriptreact"
-  ]
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "debug.javascript.usePreview": true,
+  "eslint.format.enable": true,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  }
 }

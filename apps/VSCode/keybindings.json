@@ -1,19 +1,75 @@
 // Place your key bindings in this file to overwrite the defaults
 [
-    { "key": "ctrl+shift+s", "command": "workbench.action.files.saveAll" },
-    { "key": "ctrl+f4", "command": "workbench.action.closeActiveEditor" },
-    { "key": "ctrl+shift+f4", "command": "workbench.action.closeAllEditors" },
-    { "key": "ctrl+shift+x", "command": "editor.action.transformToUppercase", "when": "editorTextFocus" },
-    { "key": "ctrl+shift+y","command": "editor.action.transformToLowercase","when": "editorTextFocus"
-    },
-    // disable use of tab key for setting focus
-    {
-      "key": "ctrl+shift+alt+m",
-      "command": "editor.action.toggleTabFocusMode"
-    },
-    {
-      "key": "ctrl+m",
-      "command": "-editor.action.toggleTabFocusMode"
-    },
-
+  { "key": "ctrl+shift+s", "command": "workbench.action.files.saveAll" },
+  { "key": "ctrl+f4", "command": "workbench.action.closeActiveEditor" },
+  { "key": "ctrl+shift+f4", "command": "workbench.action.closeAllEditors" },
+  {
+    "key": "ctrl+shift+x",
+    "command": "editor.action.transformToUppercase",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+y",
+    "command": "editor.action.transformToLowercase",
+    "when": "editorTextFocus"
+  },
+  // disable use of tab key for setting focus
+  {
+    "key": "ctrl+shift+alt+m",
+    "command": "editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+m",
+    "command": "-editor.action.toggleTabFocusMode"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "workbench.extensions.installMissingDependencies"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+g",
+    "command": "-workbench.view.scm"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "-breadcrumbs.focus",
+    "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "ctrl+shift+;",
+    "command": "-breadcrumbs.focus",
+    "when": "breadcrumbsPossible"
+  }
 ]

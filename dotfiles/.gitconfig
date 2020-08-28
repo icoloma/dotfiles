@@ -32,6 +32,7 @@
 [core]
   excludesfile = ~/.gitignore
   attributesfile = ~/.gitattributes
+	editor = code --wait
 [color "branch"]
   current = yellow reverse
   local = yellow
@@ -85,3 +86,8 @@
 # new branches are set to automatically track origin
 [branch]
 	autosetupmerge = always
+
+[diff]
+  tool = default-difftool
+[difftool "default-difftool"]
+  cmd = code --wait --diff $LOCAL $REMOTE
