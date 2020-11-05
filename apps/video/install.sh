@@ -9,8 +9,10 @@ FOLDER=$(cd "$(dirname $0)"; pwd)
 # https://github.com/phw/peek
 # https://gif.ski/
 
-if test ! $(which kazam); then
-  sudo add-apt-repository -y ppa:kazam-team/unstable-series
-  sudo apt-get update
-  sudo apt-get install kazam python3-cairo python3-xlib
-fi
+# Use OBS Studio for video capturing (launch "obs")
+# You may have to disable "video hardware aceleration" in Chrome Settings
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio
+
+# Todo: OpenShot or Shotcut for video editing. Third option would be Kdenlive

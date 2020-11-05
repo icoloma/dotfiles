@@ -8,3 +8,4 @@ if [ -f '/home/icoloma/google-cloud-sdk/path.bash.inc' ]; then . '/home/icoloma/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/home/icoloma/google-cloud-sdk/completion.bash.inc' ]; then . '/home/icoloma/google-cloud-sdk/completion.bash.inc'; fi
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

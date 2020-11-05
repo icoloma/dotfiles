@@ -20,7 +20,7 @@
       "interface $1Props {",
       "}",
       "",
-      "export function $1() {",
+      "export function $1({}: $1Props) {",
       "  ",
       "    return (",
       "      $0",
@@ -47,13 +47,5 @@
   "Matches snapshot": {
     "prefix": "snap",
     "body": ["expect(tree).toMatchSnapshot();"]
-  },
-  "Import proptypes": {
-    "prefix": "prop",
-    "body": ["import PropTypes from 'prop-types';"]
-  },
-  "Import res": {
-    "prefix": "res",
-    "body": ["import res from '../i18n/res';"]
   }
 }
