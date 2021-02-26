@@ -38,7 +38,7 @@ fi
 sudo apt-get remove thunderbird
 
 # If old apt-get repo, update
-if test `find /var/cache/apt/pkgcache.bin -mmin +1200`
+if test "$(find /var/cache/apt/pkgcache.bin -mmin +1200)"
 then
 	echo "Upgrading packages"
 	sudo apt-get update
@@ -48,3 +48,6 @@ fi
 
 # install shellcheck
 sudo apt snap install shellcheck
+
+# install ntp
+sudo apt install ntpdate
