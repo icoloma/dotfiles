@@ -50,4 +50,4 @@ fi
 sudo apt snap install shellcheck
 
 # install ntp
-sudo apt install ntpdate
+sudo apt install ntp
