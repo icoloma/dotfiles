@@ -71,5 +71,25 @@
     "key": "ctrl+shift+;",
     "command": "-breadcrumbs.focus",
     "when": "breadcrumbsPossible"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+enter",
+    "command": "github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
   }
 ]
