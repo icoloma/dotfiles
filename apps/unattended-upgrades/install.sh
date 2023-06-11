@@ -6,9 +6,4 @@ set -euo pipefail
 FOLDER=$(cd "$(dirname $0)"; pwd)
 source $FOLDER/../../_utils.sh
 
-sudo apt-get install unattended-upgrades
-if [ -f "/etc/apt/apt.conf.d/50unattended-upgrades" ]; then
-  sudo mv /etc/apt/apt.conf.d/50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades.bak
-fi
-
-sudo ln -sf $FOLDER/50unattended-upgrades /etc/apt/apt.conf.d/50unattended-upgrades
+sudo apt install unattended-upgrades
