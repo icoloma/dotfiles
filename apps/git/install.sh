@@ -6,8 +6,6 @@ if test ! $(which meld); then
   sudo apt-get -y install git git-gui meld vim > /tmp/git-install.log
 fi
 
-echo '
-[user]
-        name = Nacho Coloma
-        email = icoloma@gmail.com
-' >> ~/.gitconfig.local
+git config --global user.email icoloma@gmail.com
+git config --global user.name 'Nacho Coloma'
+

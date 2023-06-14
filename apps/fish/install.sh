@@ -10,3 +10,5 @@ sudo apt install fish
 mkdir -p ~/.config/fish/conf.d/
 ln -s "${FOLDER}/icoloma.fish" ~/.config/fish/conf.d/
 
+# make fish the default shell
+chsh -s /usr/bin/fish
