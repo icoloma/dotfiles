@@ -2,8 +2,8 @@
 # A lot of small, super necessary tools
 set -euo pipefail
 
-# Media player
-PKG="vlc"
+# Generic Colorizer
+PKG="grc"
 
 # Better than du and top
 PKG="$PKG htop ncdu"
