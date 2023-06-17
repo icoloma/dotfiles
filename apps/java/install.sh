@@ -2,8 +2,8 @@
 # Oracle Java SDK, Gradle and IntelliJ IDEA
 
 set -euo pipefail
-FOLDER=$(cd "$(dirname $0)"; pwd)
-source $FOLDER/../../_utils.sh
+FOLDER=$(cd "$(dirname "$0")"; pwd)
+source "$FOLDER"/../../_utils.sh
 
 # Select a concrete Java version:
 # sudo update-alternatives --config java
@@ -16,7 +16,4 @@ fi
 
 # No need to install gradle. Use ./gradlew in your project instead
 
-if test ! $(which idea); then
-  sudo snap install intellij-idea-community --classic
-fi
-
+# You may want to install ./intellij/ next
