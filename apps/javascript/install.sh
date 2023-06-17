@@ -7,11 +7,13 @@
 if test ! $(which nvm)
 then
   sudo apt-get install build-essential libssl-dev
-  curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.31.0/install.sh | bash
+  curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash 
   source ~/.nvm/nvm.sh
   VERSION="$(nvm ls-remote | tail -1 | tr -d ' ')"
   echo "Installing node.js $VERSION"
   nvm install $VERSION
 fi
 
+# you may have to restart the shell to run npm
+npm i -g tldr
 

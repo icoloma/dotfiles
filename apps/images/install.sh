@@ -1,6 +1,7 @@
 #!/bin/bash
 # Image processing: gimp, inkscape and converter tools
 # Also, see video/install.sh
+set -eou pipefail
 
 if test ! $(which gimp)
 then
