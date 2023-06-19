@@ -11,9 +11,9 @@ then
   source ~/.nvm/nvm.sh
   VERSION="$(nvm ls-remote | tail -1 | tr -d ' ')"
   echo "Installing node.js $VERSION"
-  nvm install $VERSION
+  nvm install "$VERSION"
 fi
 
 # you may have to restart the shell to run npm
-npm i -g tldr
+npm i -g tldr npm-check-updates
 
