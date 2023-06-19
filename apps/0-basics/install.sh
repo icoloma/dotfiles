@@ -9,7 +9,7 @@ PKG="grc"
 PKG="$PKG htop ncdu"
 
 # Basics
-PKG="$PKG traceroute net-tools curl wget"
+PKG="$PKG traceroute net-tools curl wget inotify-tools"
 
 # the j alias: https://github.com/wting/autojump
 PKG="$PKG autojump"

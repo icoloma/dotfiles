@@ -6,7 +6,7 @@
 [profiles]
   [[default]]
     cursor_color = "#aaaaaa"
-    scroll_on_output = True
+    scrollback_lines = 1000
     copy_on_selection = True
     background_image = None
 [layouts]
