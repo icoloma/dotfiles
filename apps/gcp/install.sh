@@ -2,8 +2,8 @@
 # Google Cloud Platform SDK
 
 set -euo pipefail
-FOLDER=$(cd "$(dirname $0)"; pwd)
-source $FOLDER/../../_utils.sh
+FOLDER=$(cd "$(dirname "$0")"; pwd)
+source "$FOLDER"/../../_utils.sh
 
 if test ! $(which gcloud)
 then
@@ -17,4 +17,8 @@ then
 fi
 
 #gcloud components update -q
-gcloud components install kubectl -y
+gcloud components install -y \
+  kubectl \
+  kustomize \
+  skaffold \
+  terraform-tools
