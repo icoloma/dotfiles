@@ -11,8 +11,9 @@ PKG="$PKG htop ncdu"
 # Basics
 PKG="$PKG traceroute net-tools curl wget inotify-tools"
 
-# the j alias: https://github.com/wting/autojump
-PKG="$PKG autojump"
+# zoxide instead of autojump, use the z alias
+# PKG="$PKG autojump"
+PKG="$PKG zoxide"
 
 # Test one application. If it's not there, install everything
 if test ! $(which htop)
