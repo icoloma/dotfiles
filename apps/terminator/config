@@ -1,5 +1,6 @@
 [global_config]
   window_state = maximise
+  ask_before_closing = never
 [keybindings]
   paste = <Primary>v
 [profiles]
