@@ -93,3 +93,8 @@
 
 [credential "https://*.*.sourcemanager.dev"]
   helper = gcloud.sh
+
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
